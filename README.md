@@ -1,5 +1,5 @@
-# compose-instant
-I might forget how to implement this
+# Compose Instant
+*I might forget how to implement this*
 
 ## Easy Collapsing Toolbar
 
@@ -27,4 +27,7 @@ fun Screen() {
        // CONTENT
     }
 }
+```
+```gradle
+    implementation 'androidx.compose.material3:material3'
 ```
