@@ -1,5 +1,5 @@
 # Compose Instant
-*I might forget how to implement this*
+> I might forget how to implement this
 
 ## Easy Collapsing Toolbar
 
