@@ -3,15 +3,15 @@ I might forget how to implement this
 
 ## Easy Collapsing Toolbar
 
-```
+```kotlin
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun Screen() {
-    val scrollBehavior = TopAppBarDefaults.enterAlwaysScrollBehavior()
+    val scrollBehavior = TopAppBarDefaults.enterAlwaysScrollBehavior() // (1)
 
     Scaffold(
         modifier = Modifier
-                   .nestedScroll(scrollBehavior.nestedScrollConnection),
+                   .nestedScroll(scrollBehavior.nestedScrollConnection), // (2)
         floatingActionButton = {
            // FAB
         },
@@ -20,7 +20,7 @@ fun Screen() {
                 title = {
                     Text(text = "My APP", style = MaterialTheme.typography.titleLarge)
                 },
-                scrollBehavior = scrollBehavior,
+                scrollBehavior = scrollBehavior, // (3)
                 )
         }
     ) {
