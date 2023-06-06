@@ -1,5 +1,10 @@
 # Compose Instant
-> I might forget how to implement this
+> I might forget how to implement this later
+
+## Table of Contents
+- [Easy Collapsing Toolbar](#easy-collapsing-toolbar)
+- [Swipe to dismiss](#swipe-to-dismiss)
+
 
 ## Easy Collapsing Toolbar
 
