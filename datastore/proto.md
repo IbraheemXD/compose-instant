@@ -2,6 +2,8 @@ Article: [Introduction to Jetpack DataStore | by Simona Stojanovic | Android Dev
 
 Codelab: [Working with Proto DataStore](https://developer.android.com/codelabs/android-proto-datastore#0)
 
+Proto3: [Language Guide (proto 3)](https://protobuf.dev/programming-guides/proto3/)
+
 ## **Protocol Buffers:**
 
 Protocol Buffers is a way to store data in a way that is easy to read and write. It is **language-neutral**, which means that it can be used in any programming language. It is also **platform-neutral**, which means that it can be used on any platform. And it is extensible, which means that you can add new data types to it without breaking existing data.
