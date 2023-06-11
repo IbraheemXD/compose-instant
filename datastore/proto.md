@@ -83,7 +83,7 @@ Protocol buffers are a mechanism for serializing structured data. You define how
 ```protobuf
 syntax = "proto3";
 
-option java_package = "*$**PACKAGE_NAME**$*";
+option java_package = "*$PACKAGE_NAME$*";
 option java_multiple_files = true;
 
 message UserPreferences {
@@ -238,12 +238,10 @@ object DataStoreModule {
     @Singleton
     fun providesUserPreferencesDataStore(
         @ApplicationContext context: Context,
-        @Dispatcher(IO) ioDispatcher: CoroutineDispatcher,
         userPreferencesSerializer: UserPreferencesSerializer,
     ): DataStore<UserPreferences> =
         DataStoreFactory.create(
             serializer = userPreferencesSerializer,
-            scope = CoroutineScope(ioDispatcher + SupervisorJob()),
         ) {
             context.dataStoreFile("user_preferences.pb")
         }
