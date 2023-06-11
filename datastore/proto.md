@@ -16,10 +16,11 @@ Proto Datastore uses [Protocol buffers](https://www.notion.so/Jetpack-datastore-
 
 ### ****Adding dependencies:****
 
+app level:
 ```groovy
 plugins {
     ...
-    id "com.google.protobuf" version "0.8.17"
+    id "com.google.protobuf" version "0.9.1"
 }
 
 dependencies {
